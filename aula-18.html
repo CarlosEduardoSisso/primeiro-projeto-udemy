@@ -7,12 +7,43 @@
 </head>
 <body>
     <h1>Trabalhando com tabelas</h1>
-    <table border="2">
-        <tr> <!-- Table Row-->
-            <td> <!-- Table Data -->
-                aaa
-            </td>
+    <table border="1" width="100%">
+        <tr> <!-- significa "Table Row" -->
+            <th>Código</th> <!-- significa "Table Header" -->
+            <th>Imagem</th>
+            <th>Produto</th>
+            <th>Preço</th>
         </tr>
+        <tr>
+            <td>001</td> <!-- significa "Table Data" -->
+            <td><img src="imagens/laptop.png" alt="Imagem de um laptop" width="100"></td>
+            <td>Notebook</td>
+            <td>2.999,99</td>
+        </tr>
+
+        <tr>
+            <td>002</td>
+            <td><img src="imagens/tablet.png" alt="Imagem de um tablet" width="100"></td>
+            <td>Tablet</td>
+            <td>1.499,99</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Desconto</td>
+            <td colspan="2">Cupom 1</td>
+            <td>10,00</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Cupom 2</td>
+            <td>15,00</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Total:</td>
+            <td>4.473,99</td>
+        </tr>
+
     </table>
 </body>
 </html>
