@@ -7,14 +7,43 @@
 </head>
 <body>
     <h1>Trabalhando Com Formulários</h1>
-    <h2>Cadastre-se ou Entre</h2>
+    <h2>Entre</h2>
     <form action="">
-        <h3>Login</h3>
+        <h3>Login:</h3>
         <input type="text" name="login">
-        <h3>Senha</h3>
-        <input type="password" name="senha"><br>
-        <input type="button" value="Logar">
-        
+        <h3>Senha:</h3>
+        <input type="password" name="senha">
+        <p><input type="button" value="Logar"></p>
+    </form>
+
+    <form action="">
+        <h2>Cadastre-se</h2>
+        <h3>Login:</h3>
+            <input type="text" name="login">
+        <h3>Sexo:</h3>
+            <input type="radio" name="sexo" value="M">
+            Masculino <br>
+            <input type="radio" name="sexo" value="F">
+            Feminino <br>
+        <h3>Interesses:</h3>
+            <input type="checkbox" name="interesses" id="">
+            Futebol<br>
+            <input type="checkbox" name="interesses" id="">
+            Cursos<br>
+            <input type="checkbox" name="interesses" id="">
+            Moda<br>
+            <input type="checkbox" name="interesses" id="">
+            Culinária<br>
+        <h3>Estado:</h3>
+            <select name="estado" id="">
+                <option value="sp">SP</option>
+                <option value="mg">MG</option>
+                <option value="rj">RJ</option>
+            </select>
+        <h3>Observações:</h3>
+        <textarea name="obs" id="" cols="30" rows="10"></textarea>
+        <p><input type="submit" value="Submeter">
+        </p>
     </form>
 </body>
 </html>
